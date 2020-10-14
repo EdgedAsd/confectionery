@@ -1,0 +1,136 @@
+@font-face {
+	font-family: "DreamsLiem";
+	src: url("../fonts/dreams_liem.ttf");
+}
+
+@font-face {
+	font-family: "Candara";
+	src: url("../fonts/candara.ttf");
+}
+
+@keyframes bright {
+	from {left: -20%;}
+	to {left: 120%;}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body {
+	width: 100%;	
+	height: 100%;	
+}
+
+body {
+	background-color: #fff;
+}
+
+.dark_wall {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+.light_wall {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.2);
+}
+
+.section_name {
+	text-align: center;
+	border-bottom: 1px solid rgb(246,111,125);
+	margin: auto;
+	width: 60%;
+	margin-bottom: 40px;
+	font-family: Candara;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 10px 0;
+}
+
+.logo_name {
+	font-family: DreamsLiem;
+}
+
+.link_to_another_page_wrapper {
+	margin: 40px auto 0 auto;
+	width: 80%;
+	text-align: right;
+}
+
+.link_to_another_page {
+	display: inline-block;
+	background-color: #D93646;
+	border: rgb(246,111,125) 2px solid;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 20px;
+	line-height: 20px;
+	color: #fff;
+	transition: .5s;
+	font-size: 1em;
+}
+
+
+@media (max-width: 1440px) {
+	.link_to_another_page_wrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.section_name {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 768px) {
+	.link_to_another_page {
+		font-size: .8em;
+		padding: 8px 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.section_name {
+		font-size: 1.2em;
+		margin-bottom: 20px;
+	}
+
+	.link_to_another_page_wrapper {
+		margin-top: 20px;
+	}
+
+	.link_to_another_page {
+		font-size: .6em;
+		padding: 6px 15px;
+	}
+}
+
+@media (max-width: 440px) {
+	.section_name {
+		font-size: 1.1em;
+	}
+
+	.link_to_another_page {
+		font-size: .6em;
+		padding: 3px 10px;
+	}
+}

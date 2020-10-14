@@ -1,0 +1,210 @@
+.address_info {
+	margin-top: 80px;
+}
+
+.address_info_wrapper {
+	width: 90%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+}
+
+.info {
+	width: 45%;
+	font-family: Candara;
+}
+
+.info h4.address_title {
+	font-size: 2.3em;
+}
+
+.info h4.address_title .logo_name {
+	color: rgb(246,111,125);
+}
+
+.info h6.address_description {
+	font-size: 1.8em;
+	margin-top: 20px;
+	text-indent: 40px;
+}
+
+.map {
+	height: 100%;
+	width: 50%;
+}
+
+.address_and_time {
+	width: 100%;
+	margin-top: 60px;
+	height: 100px;
+}
+
+.address {
+	float: left;
+	width: 45%;
+	height: 100%;
+}
+
+.time {
+	float: right;
+	width: 45%;
+	height: 100%;
+}
+
+.info_logo {
+	display: block;
+	float: left;
+	margin-right: 7%;
+	font-size: 3em;
+	height: 100%;
+	color: rgb(246,111,125);
+}
+
+.info_text h6 {
+	font-size: 1.8em;
+}
+
+.info_text p {
+	font-size: 1.1em;
+	margin-top: 5px;
+}
+
+
+@media (max-width: 1440px) {
+	.address_info_wrapper {
+		width: 95%;
+		margin-left: 5%;
+	}
+
+	.info h4.address_title {
+		font-size: 2.1em;
+	}
+
+	.info_text h6 {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 1200px) {
+	.address_info_wrapper {
+		height: 370px;
+	}
+
+	.info h4.address_title {
+		font-size: 1.7em;
+	}
+
+	.info h6.address_description {
+		font-size: 1.4em;
+	}
+
+	.info_text p {
+		font-size: .9em;
+	}
+
+	.info_text h6 {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 1024px) {
+	.address_info_wrapper {
+		height: 320px;
+	}
+
+	.info h4.address_title {
+		font-size: 1.3em;
+	}
+
+	.info h6.address_description {
+		font-size: 1em;
+		text-indent: 20px;
+	}
+
+	.address_and_time {
+		margin-top: 30px;
+	}
+
+	.info_logo {
+		font-size: 2.5em;
+	}
+
+	.info_text p {
+		font-size: .7em;
+	}
+
+	.info_text h6 {
+		font-size: .9em;
+	}
+}
+
+@media (max-width: 768px) {
+	.address_info_wrapper {
+		height: 250px;
+	}
+
+	.info h4.address_title {
+		font-size: 1.1em;
+	}
+
+	.info h6.address_description {
+		font-size: .7em;
+		text-indent: 20px;
+	}
+
+	.address {
+		width: 47%;
+	}
+
+	.time {
+		width: 47%;
+	}
+
+	.info_logo {
+		font-size: 2em;
+	}
+
+	.info_text p {
+		font-size: .5em;
+	}
+
+	.info_text h6 {
+		font-size: .7em;
+	}
+}
+
+@media (max-width: 640px) {
+	.address_info_wrapper {
+		display: block;
+		margin: auto;
+		height: auto;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+	.info h4.address_title {
+		padding: 0 5%;
+	}
+
+	.info h6.address_description {
+		padding: 0 5%;
+	}
+
+	.address_and_time {
+		width: 80%;
+		margin: 30px auto;
+		height: 50px;
+	}
+
+	.map {
+		height: 160px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 440px) {
+
+}

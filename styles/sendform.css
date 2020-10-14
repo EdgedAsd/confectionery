@@ -1,0 +1,326 @@
+.sendform {
+	margin-top: 80px;
+	width: 100%;
+	background: url(../images/sendform_bg.jpg) top center no-repeat;
+	background-size: cover;
+	height: 700px;
+	position: relative;
+}
+
+.sendform_title {
+	padding-top: 60px;
+}
+
+.sendform_title p {
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.8em;
+	position: relative;
+}
+
+.sendform_title p::before {
+	width: 70%;
+	position: absolute;
+	height: 10px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -72%;
+	content: "";
+}
+
+.sendform_title p::after {
+	width: 70%;
+	position: absolute;
+	height: 10px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -72%;
+	content: "";
+}
+
+.feedback_form {
+	width: 60%;
+	margin: auto;
+	background-color: #eee;
+	height: 450px;
+	margin-top: 60px;
+	border-radius: 40px;
+}
+
+.form_list {
+	width: 80%;
+	margin: auto;
+	padding: 60px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_column {
+	width: 45%;
+}
+
+.form_item {
+	height: 40px;
+	margin-bottom: 30px;
+	width: calc(100% - 20px);
+	border: none;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px #d7d7d7;
+	display: block;
+	padding-left: 20px;
+	font-family: Candara;
+	transition: box-shadow .5s;
+}
+
+.last_form_item {
+	margin-bottom: 0 !important;
+}
+
+.form_textarea {
+	width: calc(100% - 40px);
+	height: 160px;
+	border: none;
+	box-shadow: 2px 2px 2px 2px #d7d7d7;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-family: Candara;
+	transition: box-shadow .5s;
+}
+
+.form_item:focus {
+	box-shadow: 0 0 0 2px rgb(246,111,125);
+	outline: none;
+}
+
+.form_textarea:focus {
+	box-shadow: 0 0 0 2px rgb(246,111,125);
+	outline: none;
+}
+
+.form_btn {
+	display: block;
+	width: 25%;
+	padding: 10px 20px;
+	margin: 30px 0 0 10%;
+	border-radius: 20px;
+	font-family: Candara;
+	font-size: 1em;
+	text-align: center;
+}
+
+.check_basket {
+	border: 2px rgb(246,111,125) solid;
+	background-color: #fff;
+	color: #000;
+	transition: .5s;
+}
+
+.check_basket:active {
+	outline: none;
+}
+
+.check_basket:focus {
+	outline: none;
+}
+
+.submit_btn {
+	background-color: #D93646;
+	border: rgb(246,111,125) 2px solid;
+	color: #fff;
+	transition: .5s;
+}
+
+.submit_btn:active {
+	outline: none;
+}
+
+.submit_btn:focus {
+	outline: none;
+}
+
+
+@media (max-width: 1440px) {
+	.form_btn {
+		font-size: .9em;
+	}
+}
+
+@media (max-width: 1200px) {
+	.sendform_title p {
+		font-size: 1.6em;
+	}
+
+	.form_btn {
+		font-size: .8em;
+	}
+}
+
+@media (max-width: 1024px) {
+	.sendform {
+		height: 650px;
+	}
+
+	.sendform_title p {
+		font-size: 1.2em;
+	}
+
+	.sendform_title p::before {
+		height: 7px;
+	}
+
+	.sendform_title p::after {
+		height: 7px;
+	}
+
+	.feedback_form {
+		width: 70%;
+		height: 400px;
+	}
+
+	.form_list {
+		padding-top: 40px;
+	}
+
+	.form_btn {
+		width: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.sendform {
+		height: 450px;
+	}
+
+	.sendform_title {
+		padding-top: 30px;
+	}
+	
+	.sendform_title p {
+		font-size: 1em;
+	}
+
+	.sendform_title p::before {
+		height: 6px;
+	}
+
+	.sendform_title p::after {
+		height: 6px;
+	}
+
+	.feedback_form {
+		width: 70%;
+		margin-top: 30px;
+		height: 300px;
+	}
+
+	.form_list {
+		padding-top: 30px;
+	}
+
+	.form_item {
+		height: 30px;
+		margin-bottom: 15px;
+	}
+
+	.form_textarea {
+		height: 99px;
+		width: calc(100% - 30px);
+		padding: 10px 15px;
+	}
+
+	.form_btn {
+		width: calc(37% - 4px);
+		margin: 15px 0 0 10%;
+	}
+
+	.check_basket {
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 640px) {
+	.sendform {
+		margin-top: 40px;
+		height: 470px;
+	}
+	
+	.sendform_title p {
+		font-size: .7em;
+	}
+
+	.sendform_title p::before {
+		height: 6px;
+		width: 60%;
+	}
+
+	.sendform_title p::after {
+		height: 6px;
+		width: 60%;
+	}
+
+	.feedback_form {
+		height: 360px;
+	}
+
+	.form_list {
+		display: block;
+	}
+
+	.form_column {
+		width: 100%;
+		margin: auto;
+	}
+
+	.textarea_wrapper {
+		margin-top: 15px;
+	}
+
+	.form_textarea {
+		height: 99px;
+		width: calc(100% - 30px);
+		padding: 10px 15px;
+	}
+
+	.form_btn {
+		width: 37%;
+		display: inline-block;
+		margin: 15px 0 0 10%;
+		font-size: 0.6em;
+		padding: 10px;
+	}
+
+	.submit_btn {
+		margin: 15px 0 0 6%;
+	}
+}
+
+@media (max-width: 440px) {	
+	.sendform_title p {
+		font-size: .7em;
+		width: 65%;
+	}
+
+	.sendform_title p::before {
+		height: 4px;
+		width: 60%;
+		left: -60%;
+	}
+
+	.sendform_title p::after {
+		height: 4px;
+		width: 60%;
+		right: -60%;
+	}
+
+	.feedback_form {
+		width: 90%;
+		height: 360px;
+	}
+}
