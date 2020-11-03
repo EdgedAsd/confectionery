@@ -24,7 +24,7 @@
 	<!-- Main website header with logo and nav bar -->
 	<header class="main_header">
 		<div class="dark_wall">
-			<header class="header_tophead">
+			<div class="header_tophead">
 				<h1 class="logo">
 					<a href="" class="logo_link">
 						<span class="logo_word">CupCake</span>
@@ -33,6 +33,10 @@
 					</a>
 				</h1>
 				<nav class="header_navigation">
+					<div class="row_back">
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</div>
+
 					<ul class="header_navigation_list">
 						<li class="first_item"><a href="#section_menu">Меню</a></li>
 						<li><a href="#section_comments">Отзывы</a></li>
@@ -45,8 +49,9 @@
 				<div class="show_nav_btn">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
-			</header>
-			<div class="header_main">
+			</div>
+
+			<div class="header_main_text">
 				<h2 class="header_description">
 					Попробуйте вкуснейшие<br>
 					торты и пирожные от<br>
@@ -222,7 +227,7 @@
 				</div>
 			</div>
 			<div class="map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4967e5ee2b8f8125afab99b7550292955e6acae3d8d43e1e5cfb3f12e108efce&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+				<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4967e5ee2b8f8125afab99b7550292955e6acae3d8d43e1e5cfb3f12e108efce&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true">
 				</script>
 			</div>
 		</div>
@@ -231,8 +236,8 @@
 	<!-- Feedback form and button (to check the basket) -->
 	<section class="sendform" id="feedback_form">
 		<div class="light_wall">
-			<h2 class="sendform_title"><p>Связаться с нами</p></h2>
-			<form action="" class="feedback_form">
+			<div class="title_wrapper"><h2 class="sendform_title">Связаться с нами</h2></div>
+			<form class="feedback_form">
 				<div class="form_list">
 					<div class="form_column">
 						<input type="text" class="form_item" placeholder="Ваше имя">
@@ -240,7 +245,7 @@
 						<input type="text" class="form_item last_form_item" placeholder="Телефон">
 					</div>
 					<div class="form_column textarea_wrapper">
-						<textarea name="" id="" cols="30" rows="10" class="form_textarea" placeholder="Комментарии"></textarea>
+						<textarea cols="30" rows="10" class="form_textarea" placeholder="Комментарии"></textarea>
 					</div>
 				</div>
 				<button class="check_basket form_btn">Проверить корзину</button>
@@ -300,86 +305,9 @@
 			</li>
 		</ul>
 	</footer>
+
+	<script src="scripts/btn_animations.js"></script>
+	<script src="scripts/nav_list.js"></script>
+
 </body>
-
-<script>
-	
-	let check_basket_btn = document.getElementsByClassName('check_basket')[0];	// Button in sendform
-	let basket_btns = document.querySelectorAll('.to_basket_btn');				// Buttons in menu
-	basket_btns = Array.prototype.slice.call(basket_btns, 0);					// Collection to array
-	basket_btns.push(check_basket_btn);
-
-	for (let btn of basket_btns) {
-		btn.onmousedown = function() {
-			// Color fill effect for the only 200ms after mouse click
-
-			this.style.transition = "0.2s";
-			this.style.boxShadow = "inset 0 0 0 2px #fff, inset 0 0 0 20px #D93646";
-			let timer = setTimeout((btn = this) => {
-				btn.style.boxShadow = "none";
-			}, 200);
-		}
-
-		btn.onmouseover = function() {
-			// Hover effect - creating the second border - after mouse over this element
-
-			this.style.transition = "0.5s";
-			this.style.boxShadow = "inset 0 0 0 2px #fff, inset 0 0 0 4px #D93646";
-		}
-
-		btn.onmouseout = function() {
-			// Clear effects
-
-			btn.style.boxShadow = "none";
-		}
-	}
-
-	check_basket_btn.onmousedown = function() {
-		// Deleting timet from previous effect
-
-		this.style.transition = "0.2s";
-		this.style.boxShadow = "inset 0 0 0 2px #fff, inset 0 0 0 20px #D93646";
-	}
-	check_basket_btn.onmouseup = function() {
-		// Return transition after end of click
-
-		this.style.transition = "0.5s";
-		btn.style.boxShadow = "none";
-	}
-
-	let link_btns = [													// Button-links and send button in form
-		...document.getElementsByClassName('link_to_another_page'),
-		document.getElementsByClassName('submit_btn')[0]
-	];
-
-	for (let btn of link_btns) {
-		btn.onmousedown = function() {
-			// Fast change color after click
-
-			this.style.backgroundColor = "#B12C39";
-			this.style.transition = '0';;
-		}
-
-		btn.onmouseup = function() {
-			// Return transition and change color back after end of click
-
-			btn.style.backgroundColor = "#D93646";
-			this.style.transition = '0.5s';
-		}
-
-		btn.onmouseover = function() {
-			// Hover effect - creating the second border - after mouse over this element
-
-			this.style.boxShadow = "inset 0 0 0 2px #fff";
-		}
-
-		btn.onmouseout = function() {
-			// Deleting the second border and change color back after end of click
-
-			btn.style.boxShadow = "none";
-			btn.style.backgroundColor = "#D93646";
-		}
-	}
-
-</script>
 </html>
